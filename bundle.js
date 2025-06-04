@@ -462,7 +462,7 @@ const LoginPage = ({
             fileName: _jsxFileName,
             lineNumber: 225,
             columnNumber: 13
-          }, undefined), " Try \"Zac Ellis\" / \"Streamline Aquatics\" or \"Connor Gilmour\" / \"Sweat\""]
+          }, undefined), " Try User: Demo Password: Demo"]
         }, void 0, true, {
           fileName: _jsxFileName,
           lineNumber: 224,
