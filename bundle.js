@@ -52,7 +52,7 @@ var _jsxFileName = "/app/frontend/src/App.js",
 const INITIAL_USERS = {
   'Zac Ellis': {
     password: 'Streamline Aquatics',
-    role: 'coach',
+    role: 'admin',
     name: 'Zac Ellis'
   },
   'Connor Gilmour': {
@@ -693,7 +693,7 @@ const AdminPage = ({
   const [users, setUsers] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
     'Zac Ellis': {
       password: 'Streamline Aquatics',
-      role: 'coach',
+      role: 'admin',
       name: 'Zac Ellis'
     },
     'Connor Gilmour': {
