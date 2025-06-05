@@ -52,7 +52,7 @@ var _jsxFileName = "/app/frontend/src/App.js",
 const INITIAL_USERS = {
   'Zac Ellis': {
     password: 'Streamline Aquatics',
-    role: 'coach',
+    role: 'admin',
     name: 'Zac Ellis'
   },
   'Connor Gilmour': {
@@ -142,7 +142,7 @@ const Navigation = ({
         lineNumber: 38,
         columnNumber: 9
       }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("div", {
-        className: "hidden md:flex items-center space-x-6",
+        className: "hidden flex items-center space-x-6",
         children: [['Home', 'Programs', 'Coach', 'Contact'].map(item => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("button", {
           onClick: () => setCurrentPage(item.toLowerCase()),
           className: `text-white hover:text-green-400 transition-colors font-medium ${currentPage === item.toLowerCase() ? 'text-green-400' : ''}`,
@@ -231,7 +231,7 @@ const Navigation = ({
         lineNumber: 44,
         columnNumber: 9
       }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("div", {
-        className: "md:hidden",
+        className: "hidden",
         children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("button", {
           onClick: onLogout,
           className: "text-white hover:text-red-400 transition-colors text-sm",
@@ -462,7 +462,7 @@ const LoginPage = ({
             fileName: _jsxFileName,
             lineNumber: 225,
             columnNumber: 13
-          }, undefined), " Try \"Zac Ellis\" / \"Streamline Aquatics\" or \"Connor Gilmour\" / \"Sweat\""]
+          }, undefined), " Try User: Demo Password: Demo"]
         }, void 0, true, {
           fileName: _jsxFileName,
           lineNumber: 224,
@@ -693,7 +693,7 @@ const AdminPage = ({
   const [users, setUsers] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
     'Zac Ellis': {
       password: 'Streamline Aquatics',
-      role: 'coach',
+      role: 'admin',
       name: 'Zac Ellis'
     },
     'Connor Gilmour': {
@@ -945,7 +945,7 @@ const AdminPage = ({
         lineNumber: 188,
         columnNumber: 9
       }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-        className: "grid grid-cols-1 md:grid-cols-4 gap-6 mb-8",
+        className: "grid grid-cols-1 grid-cols-4 gap-6 mb-8",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
           className: "bg-white rounded-lg shadow-lg p-6 text-center",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
@@ -1045,7 +1045,7 @@ const AdminPage = ({
           lineNumber: 218,
           columnNumber: 11
         }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-          className: "grid grid-cols-1 md:grid-cols-3 gap-4",
+          className: "grid grid-cols-1 grid-cols-3 gap-4",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("button", {
             onClick: () => setShowAddUser(true),
             className: "bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition-colors",
@@ -1564,7 +1564,7 @@ const CoachPage = ({
       children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
         className: "bg-white rounded-lg shadow-lg overflow-hidden mb-16",
         children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-          className: "md:flex",
+          className: "flex",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
             className: "md:w-2/3 p-8",
             children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("h2", {
@@ -1582,7 +1582,7 @@ const CoachPage = ({
               lineNumber: 16,
               columnNumber: 15
             }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-              className: "grid grid-cols-1 md:grid-cols-2 gap-8 mb-8",
+              className: "grid grid-cols-1 grid-cols-2 gap-8 mb-8",
               children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
                 children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("h3", {
                   className: "text-xl font-semibold text-gray-900 mb-4",
@@ -1884,7 +1884,7 @@ const CoachPage = ({
           lineNumber: 85,
           columnNumber: 11
         }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-          className: "grid grid-cols-1 md:grid-cols-3 gap-8",
+          className: "grid grid-cols-1 grid-cols-3 gap-8",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
             className: "text-center",
             children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
@@ -1980,7 +1980,7 @@ const CoachPage = ({
         lineNumber: 83,
         columnNumber: 9
       }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-        className: "grid grid-cols-1 md:grid-cols-2 gap-8 mb-16",
+        className: "grid grid-cols-1 grid-cols-2 gap-8 mb-16",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("img", {
           src: "https://images.pexels.com/photos/711187/pexels-photo-711187.jpeg",
           alt: "Swimming Technique Training",
@@ -2012,7 +2012,7 @@ const CoachPage = ({
       children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
         className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-          className: "grid grid-cols-1 md:grid-cols-4 gap-8",
+          className: "grid grid-cols-1 grid-cols-4 gap-8",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
             className: "col-span-2",
             children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("h3", {
@@ -2796,7 +2796,7 @@ const ContactPage = ({
       children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
         className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-          className: "grid grid-cols-1 md:grid-cols-4 gap-8",
+          className: "grid grid-cols-1 grid-cols-4 gap-8",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
             className: "col-span-2",
             children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("h3", {
@@ -3744,7 +3744,7 @@ const FINACalculatorPage = ({
           lineNumber: 245,
           columnNumber: 13
         }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-          className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4",
+          className: "grid grid-cols-1 grid-cols-2 lg:grid-cols-3 gap-4",
           children: calculationHistory.map(calc => {
             const level = getPerformanceLevel(calc.points);
             return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
@@ -4773,7 +4773,7 @@ const GalleryPage = ({
         lineNumber: 156,
         columnNumber: 9
       }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-        className: "flex flex-col md:flex-row justify-between items-center mb-8 space-y-4 md:space-y-0",
+        className: "flex flex-col flex-row justify-between items-center mb-8 space-y-4 md:space-y-0",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
           className: "flex flex-wrap gap-2",
           children: categories.map(category => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("button", {
@@ -4983,7 +4983,7 @@ const GalleryPage = ({
         lineNumber: 190,
         columnNumber: 11
       }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-        className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6",
+        className: "grid grid-cols-1 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6",
         children: filteredPhotos.map(photo => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
           className: "bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
@@ -5640,7 +5640,7 @@ const GoalTrackerPage = ({
           lineNumber: 210,
           columnNumber: 13
         }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-          className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4",
+          className: "grid grid-cols-1 grid-cols-2 lg:grid-cols-3 gap-4",
           children: Object.entries(goals).map(([event, time]) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
             className: "bg-green-50 border border-green-200 rounded-lg p-4",
             children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
@@ -5746,7 +5746,7 @@ const GoalTrackerPage = ({
                 lineNumber: 245,
                 columnNumber: 23
               }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-                className: "grid grid-cols-1 md:grid-cols-3 gap-4",
+                className: "grid grid-cols-1 grid-cols-3 gap-4",
                 children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
                   className: "bg-blue-50 p-4 rounded-lg",
                   children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("p", {
@@ -5997,7 +5997,7 @@ const HomePage = ({
         lineNumber: 42,
         columnNumber: 9
       }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-        className: "grid grid-cols-1 md:grid-cols-3 gap-8",
+        className: "grid grid-cols-1 grid-cols-3 gap-8",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
           className: "text-center p-6",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
@@ -6147,7 +6147,7 @@ const HomePage = ({
         lineNumber: 83,
         columnNumber: 9
       }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-        className: "grid grid-cols-1 md:grid-cols-2 gap-8 mb-12",
+        className: "grid grid-cols-1 grid-cols-2 gap-8 mb-12",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
           className: "bg-white rounded-lg shadow-lg p-8",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("h3", {
@@ -6323,7 +6323,7 @@ const HomePage = ({
     children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
       className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
       children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-        className: "grid grid-cols-1 md:grid-cols-4 gap-8",
+        className: "grid grid-cols-1 grid-cols-4 gap-8",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
           className: "col-span-2",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("h3", {
@@ -6661,7 +6661,7 @@ const ProgramsPage = ({
       lineNumber: 6,
       columnNumber: 7
     }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-      className: "grid grid-cols-1 md:grid-cols-2 gap-8 mb-16",
+      className: "grid grid-cols-1 grid-cols-2 gap-8 mb-16",
       children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
         className: "bg-white rounded-lg shadow-lg overflow-hidden",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("img", {
@@ -7096,7 +7096,7 @@ const ProgramsPage = ({
       children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
         className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-          className: "grid grid-cols-1 md:grid-cols-4 gap-8",
+          className: "grid grid-cols-1 grid-cols-4 gap-8",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
             className: "col-span-2",
             children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("h3", {
@@ -7627,7 +7627,7 @@ const QualifyingTimesPage = () => {
       }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
         className: "bg-white rounded-lg shadow-lg p-6 mb-8",
         children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
-          className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+          className: "grid grid-cols-1 grid-cols-2 gap-6",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
             children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("label", {
               className: "block text-sm font-medium text-gray-700 mb-2",
@@ -30007,30 +30007,6 @@ if (false) {} else {
 
 "use strict";
 
-
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ "./node_modules/scheduler/cjs/scheduler.development.js");
-}
-
-/***/ }),
-
-/***/ "./node_modules/webpack-dev-server/client/clients/WebSocketClient.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/webpack-dev-server/client/clients/WebSocketClient.js ***!
-  \***************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ WebSocketClient)
-/* harmony export */ });
-/* harmony import */ var _utils_log_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/log.js */ "./node_modules/webpack-dev-server/client/utils/log.js");
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
 function _defineProperties(target, props) {
   for (var i = 0; i < props.length; i++) {
     var descriptor = props[i];
@@ -30063,50 +30039,8 @@ function _toPrimitive(input, hint) {
   return (hint === "string" ? String : Number)(input);
 }
 
-var WebSocketClient = /*#__PURE__*/function () {
-  /**
-   * @param {string} url
-   */
-  function WebSocketClient(url) {
-    _classCallCheck(this, WebSocketClient);
-    this.client = new WebSocket(url);
-    this.client.onerror = function (error) {
-      _utils_log_js__WEBPACK_IMPORTED_MODULE_0__.log.error(error);
-    };
-  }
 
-  /**
-   * @param {(...args: any[]) => void} f
-   */
-  _createClass(WebSocketClient, [{
-    key: "onOpen",
-    value: function onOpen(f) {
-      this.client.onopen = f;
-    }
 
-    /**
-     * @param {(...args: any[]) => void} f
-     */
-  }, {
-    key: "onClose",
-    value: function onClose(f) {
-      this.client.onclose = f;
-    }
-
-    // call f with the message string as the first argument
-    /**
-     * @param {(...args: any[]) => void} f
-     */
-  }, {
-    key: "onMessage",
-    value: function onMessage(f) {
-      this.client.onmessage = function (e) {
-        f(e.data);
-      };
-    }
-  }]);
-  return WebSocketClient;
-}();
 
 
 /***/ }),
@@ -32011,34 +31945,6 @@ var msgTextStyle = {
 /***/ }),
 
 /***/ "./node_modules/webpack-dev-server/client/socket.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/webpack-dev-server/client/socket.js ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   client: () => (/* binding */ client),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _clients_WebSocketClient_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clients/WebSocketClient.js */ "./node_modules/webpack-dev-server/client/clients/WebSocketClient.js");
-/* harmony import */ var _utils_log_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/log.js */ "./node_modules/webpack-dev-server/client/utils/log.js");
-/* provided dependency */ var __webpack_dev_server_client__ = __webpack_require__(/*! ./node_modules/webpack-dev-server/client/clients/WebSocketClient.js */ "./node_modules/webpack-dev-server/client/clients/WebSocketClient.js");
-/* global __webpack_dev_server_client__ */
-
-
-
-
-// this WebsocketClient is here as a default fallback, in case the client is not injected
-/* eslint-disable camelcase */
-var Client =
-// eslint-disable-next-line no-nested-ternary
-typeof __webpack_dev_server_client__ !== "undefined" ? typeof __webpack_dev_server_client__.default !== "undefined" ? __webpack_dev_server_client__.default : __webpack_dev_server_client__ : _clients_WebSocketClient_js__WEBPACK_IMPORTED_MODULE_0__["default"];
-/* eslint-enable camelcase */
-
-var retries = 0;
-var maxRetries = 10;
 
 // Initialized client is exported so external consumers can utilize the same instance
 // It is mutable to enforce singleton
@@ -32549,7 +32455,7 @@ if (true) {
         log("info", "[HMR] App is up to date.");
       }
     }).catch(function (err) {
-      var status = module.hot.status();
+      var status = 
       if (["abort", "fail"].indexOf(status) >= 0) {
         log("warning", "[HMR] Cannot apply update. " + (typeof window !== "undefined" ? "Need to do a full reload!" : "Please reload manually!"));
         log("warning", "[HMR] " + log.formatError(err));
@@ -36632,7 +36538,7 @@ if (true) {
       __WEBPACK_OUTDATED_DEPENDENCIES__ => { /* harmony import */ _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_App_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!../node_modules/source-map-loader/dist/cjs.js!./App.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/App.css");
 (function () {
         if (!isEqualLocals(oldLocals, isNamedExport ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_App_css__WEBPACK_IMPORTED_MODULE_6__ : _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_App_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals, isNamedExport)) {
-                module.hot.invalidate();
+                
 
                 return;
               }
@@ -36739,7 +36645,7 @@ if (true) {
       __WEBPACK_OUTDATED_DEPENDENCIES__ => { /* harmony import */ _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!../node_modules/source-map-loader/dist/cjs.js!./index.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/index.css");
 (function () {
         if (!isEqualLocals(oldLocals, isNamedExport ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__ : _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_oneOf_5_use_2_node_modules_source_map_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals, isNamedExport)) {
-                module.hot.invalidate();
+                
 
                 return;
               }
@@ -38288,7 +38194,7 @@ module.exports = parent;
 /******/ 		__webpack_require__.i.push(function (options) {
 /******/ 			var module = options.module;
 /******/ 			var require = createRequire(options.require, options.id);
-/******/ 			module.hot = createModuleHotObject(options.id, module);
+/******/ 			
 /******/ 			module.parents = currentParents;
 /******/ 			module.children = [];
 /******/ 			currentParents = [];
@@ -38996,14 +38902,14 @@ module.exports = parent;
 /******/ 						var data = {};
 /******/ 		
 /******/ 						// Call dispose handlers
-/******/ 						var disposeHandlers = module.hot._disposeHandlers;
+/******/ 						var disposeHandlers = 
 /******/ 						for (j = 0; j < disposeHandlers.length; j++) {
 /******/ 							disposeHandlers[j].call(null, data);
 /******/ 						}
 /******/ 						__webpack_require__.hmrD[moduleId] = data;
 /******/ 		
 /******/ 						// disable module (this disables requires from this module)
-/******/ 						module.hot.active = false;
+/******/ 						
 /******/ 		
 /******/ 						// remove module from cache
 /******/ 						delete __webpack_require__.c[moduleId];
@@ -39065,9 +38971,9 @@ module.exports = parent;
 /******/ 								for (var j = 0; j < moduleOutdatedDependencies.length; j++) {
 /******/ 									var dependency = moduleOutdatedDependencies[j];
 /******/ 									var acceptCallback =
-/******/ 										module.hot._acceptedDependencies[dependency];
+/******/ 										
 /******/ 									var errorHandler =
-/******/ 										module.hot._acceptedErrorHandlers[dependency];
+/******/ 										
 /******/ 									if (acceptCallback) {
 /******/ 										if (callbacks.indexOf(acceptCallback) !== -1) continue;
 /******/ 										callbacks.push(acceptCallback);
