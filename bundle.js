@@ -31946,9 +31946,6 @@ var msgTextStyle = {
 
 /***/ "./node_modules/webpack-dev-server/client/socket.js":
 
-var retries = 0;
-var maxRetries = 10;
-
 // Initialized client is exported so external consumers can utilize the same instance
 // It is mutable to enforce singleton
 // eslint-disable-next-line import/no-mutable-exports
