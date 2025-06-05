@@ -52,7 +52,7 @@ var _jsxFileName = "/app/frontend/src/App.js",
 const INITIAL_USERS = {
   'Zac Ellis': {
     password: 'Streamline Aquatics',
-    role: 'admin',
+    role: 'coach',
     name: 'Zac Ellis'
   },
   'Connor Gilmour': {
@@ -462,7 +462,7 @@ const LoginPage = ({
             fileName: _jsxFileName,
             lineNumber: 225,
             columnNumber: 13
-          }, undefined), " Try User: Demo Password: Demo"]
+          }, undefined), " Try \"Zac Ellis\" / \"Streamline Aquatics\" or \"Connor Gilmour\" / \"Sweat\""]
         }, void 0, true, {
           fileName: _jsxFileName,
           lineNumber: 224,
@@ -693,7 +693,7 @@ const AdminPage = ({
   const [users, setUsers] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
     'Zac Ellis': {
       password: 'Streamline Aquatics',
-      role: 'admin',
+      role: 'coach',
       name: 'Zac Ellis'
     },
     'Connor Gilmour': {
@@ -30007,6 +30007,30 @@ if (false) {} else {
 
 "use strict";
 
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ "./node_modules/scheduler/cjs/scheduler.development.js");
+}
+
+/***/ }),
+
+/***/ "./node_modules/webpack-dev-server/client/clients/WebSocketClient.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/webpack-dev-server/client/clients/WebSocketClient.js ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ WebSocketClient)
+/* harmony export */ });
+/* harmony import */ var _utils_log_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/log.js */ "./node_modules/webpack-dev-server/client/utils/log.js");
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
 function _defineProperties(target, props) {
   for (var i = 0; i < props.length; i++) {
     var descriptor = props[i];
@@ -30039,8 +30063,50 @@ function _toPrimitive(input, hint) {
   return (hint === "string" ? String : Number)(input);
 }
 
+var WebSocketClient = /*#__PURE__*/function () {
+  /**
+   * @param {string} url
+   */
+  function WebSocketClient(url) {
+    _classCallCheck(this, WebSocketClient);
+    this.client = new WebSocket(url);
+    this.client.onerror = function (error) {
+      _utils_log_js__WEBPACK_IMPORTED_MODULE_0__.log.error(error);
+    };
+  }
 
+  /**
+   * @param {(...args: any[]) => void} f
+   */
+  _createClass(WebSocketClient, [{
+    key: "onOpen",
+    value: function onOpen(f) {
+      this.client.onopen = f;
+    }
 
+    /**
+     * @param {(...args: any[]) => void} f
+     */
+  }, {
+    key: "onClose",
+    value: function onClose(f) {
+      this.client.onclose = f;
+    }
+
+    // call f with the message string as the first argument
+    /**
+     * @param {(...args: any[]) => void} f
+     */
+  }, {
+    key: "onMessage",
+    value: function onMessage(f) {
+      this.client.onmessage = function (e) {
+        f(e.data);
+      };
+    }
+  }]);
+  return WebSocketClient;
+}();
 
 
 /***/ }),
@@ -31945,6 +32011,34 @@ var msgTextStyle = {
 /***/ }),
 
 /***/ "./node_modules/webpack-dev-server/client/socket.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/webpack-dev-server/client/socket.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   client: () => (/* binding */ client),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _clients_WebSocketClient_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clients/WebSocketClient.js */ "./node_modules/webpack-dev-server/client/clients/WebSocketClient.js");
+/* harmony import */ var _utils_log_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/log.js */ "./node_modules/webpack-dev-server/client/utils/log.js");
+/* provided dependency */ var __webpack_dev_server_client__ = __webpack_require__(/*! ./node_modules/webpack-dev-server/client/clients/WebSocketClient.js */ "./node_modules/webpack-dev-server/client/clients/WebSocketClient.js");
+/* global __webpack_dev_server_client__ */
+
+
+
+
+// this WebsocketClient is here as a default fallback, in case the client is not injected
+/* eslint-disable camelcase */
+var Client =
+// eslint-disable-next-line no-nested-ternary
+typeof __webpack_dev_server_client__ !== "undefined" ? typeof __webpack_dev_server_client__.default !== "undefined" ? __webpack_dev_server_client__.default : __webpack_dev_server_client__ : _clients_WebSocketClient_js__WEBPACK_IMPORTED_MODULE_0__["default"];
+/* eslint-enable camelcase */
+
+var retries = 0;
+var maxRetries = 10;
 
 // Initialized client is exported so external consumers can utilize the same instance
 // It is mutable to enforce singleton
